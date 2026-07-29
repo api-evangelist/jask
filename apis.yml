@@ -1,8 +1,23 @@
 aid: jask
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/jask.png
 name: Jask
-description: 'Jask is a company surfaced as a portfolio company of kleiner-perkins and added to the API
-  Evangelist network as a stub for enrichment. Sector: security. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Jask was a security startup (an autonomous Security Operations Center / SOC platform) that
+  was acquired by Sumo Logic. As of enrichment, its domains jask.com and jask.ai both 301-redirect to
+  sumologic.com, so Jask no longer operates an independent brand, developer portal, documentation, or
+  public API. It was surfaced as a portfolio company of kleiner-perkins and added to the API Evangelist
+  network as a stub. Sector: security. There is no live Jask provider surface to enrich; any developer
+  and API resources now belong to the acquirer, Sumo Logic, and are not attributed to Jask here.'
 url: https://raw.githubusercontent.com/api-evangelist/jask/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,9 +25,12 @@ x-backed-by:
 - kleiner-perkins
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: sumo-logic
+x-status-evidence: 'jask.com/www.jask.com/jask.ai all HTTP 301 -> sumologic.com (probed 2026-07-19)'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Security
@@ -22,3 +40,8 @@ maintainers:
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
