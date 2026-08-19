@@ -28,7 +28,7 @@ x-tier-reason: portfolio-lead
 x-status: acquired
 x-acquired-by: sumo-logic
 x-status-evidence: 'jask.com/www.jask.com/jask.ai all HTTP 301 -> sumologic.com (probed 2026-07-19)'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
