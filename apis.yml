@@ -56,3 +56,9 @@ x-enrichment:
   status: backfilled
   pass: local-v1
   note: backfilled from .gitignore signal + verified work evidence
+common:
+- type: ParentCompany
+  url: https://apis.io/providers/sumo-logic/
+  name: Sumo Logic
+  x-relationship: acquired
+  x-evidence: "Jask was a security startup (an autonomous Security Operations Center / SOC platform) that was acquired by Sumo Logic. As of enrichment, its domains jask."
